@@ -12,10 +12,10 @@ Resources:
   
         
         
-  HelloWorld:
+  Lambda_Function:
     Type: AWS::Lambda::Function
     Properties:
-      FunctionName: test1
+      FunctionName: python_test
       Role: !GetAtt LambdaRole.Arn
       Runtime: python3.9
       Handler: lambda_function.lambda_handler
